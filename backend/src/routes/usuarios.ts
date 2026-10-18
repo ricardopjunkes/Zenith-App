@@ -41,7 +41,7 @@ router.post("/usuarios", async (req, res) => {
   return res.status(201).json(usuario);
 });
 
-// Autenticação do usuário
+// Autenticação dos usuários
 router.post("/usuarios/login", async (req, res) => {
   const { email, senha } = req.body;
 
